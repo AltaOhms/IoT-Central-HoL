@@ -2,7 +2,7 @@
 
 ![iot central and mx chip](./media/iot-central-mxchip-banner.png)
 
-This hands-on lab is repurposed content from the "[Connect an MXChip IoT DevKit device to your Azure IoT Central application](https://docs.microsoft.com/en-us/azure/iot-central/howto-connect-devkit?WT.mc_id=github-blog-dglover?WT.mc_id=github-blog-dglover)" guide and [Dan Glover's workshop](https://github.com/gloveboxes/iot-central-mxchip-hol).
+This hands-on lab is repurposed content from the "[Connect an MXChip IoT DevKit device to your Azure IoT Central application](https://docs.microsoft.com/en-us/azure/iot-central/howto-connect-devkit?WT.mc_id=github-blog-dglover?WT.mc_id=github-blog-dglover)" guide and [Dave Glover's workshop](https://github.com/gloveboxes/iot-central-mxchip-hol).
 
 There are three main sections in this hands-on lab.
 
@@ -55,7 +55,7 @@ This article describes how, as a device developer, to connect a MXChip IoT DevKi
 
 ## Sample Devkits application
 
-An application created from the **Sample Devkits** application template includes a **MXChip** device template that defines the following device characteristics:
+An application created from the **Sample Devkits** application template already includes a **MXChip** device template that defines the following device characteristics:
 
 - Telemetry measurements for **Humidity**, **Temperature**, **Pressure**, **Magnetometer** (measured along X, Y, Z axis), **Accelerometer** (measured along X, Y, Z axis), and **Gyroscope** (measured along X, Y, Z axis).
 - State measurement for **Device State**.
@@ -73,14 +73,19 @@ For full details about the configuration, see [MXChip Device template details](#
 
 In your Azure IoT Central application, add a real device from the **MXChip** device template and make a note of the device connection details: **Scope ID, Device ID, and Primary key**:
 
-1. Add a **real device** from Device Explorer, select **+New > Real** to add a real device.
+1. Add a **real device** from Device Explorer, select **+New > Real** to add a real device. Device Explorer is found on the right side bar.
+
+    ![Select +New > Real Device](media/howto-connect-devkit/addnewrealdevice.png)
 
     * Enter a lowercase **Device ID**, or use the suggested **Device ID**.
     * Enter a **Device Name**, or use the suggested name
+    * Hit **Create**
 
     ![Add Device](media/howto-connect-devkit/add-device.png)
 
 1. To get the device connection details, **Scope ID**, **Device ID**, and **Primary key**, select **Connect** on the device page.
+
+    ![Connection details](media/howto-connect-devkit/connectdevice.png)
 
     ![Connection details](media/howto-connect-devkit/device-connect.png)
 
@@ -535,6 +540,6 @@ If you configured a location property, you can visualize the location by using a
 
 You can resize the map to your desired size. Now when an operator views the dashboard in the **Device Explorer**, all the dashboard tiles that you've configured, including a location map are visible.
 
-Congrats on finishining the Lab!! 
+Congrats on finishing the Lab!! 
 
 
