@@ -171,6 +171,13 @@ You can view the telemetry measurements and reported property values, and config
 
     ![View device dashboard](media/howto-connect-devkit/devicedashboardnew.png)
 
+## Challenges
+
+1) Create a Rule that uses Microsoft Flow to alert the Ready Training Channel on Teams.
+
+2) Look into Continuous Data Export and how it would be useful to your customer.
+
+
 ## MXChip Development with Visual Studio Code (Advanced)
 
 ![MX Chip development with Visual Studio Code](./media/vs-code.png)
